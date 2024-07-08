@@ -1,0 +1,39 @@
+# Food Health Ontology
+
+This food health ontology is used to store the food eaten by a person and the associated health problem caused by that food to him it it has
+
+### Classes
+- Food
+- People
+- HealthProblem
+
+### Properties
+
+- eats
+- experience
+
+
+### OWL found in the file 'foodHealth.owl'
+
+Turtle representation
+
+```
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/10/rdf-schema#> .
+
+:Person rdf:type rdfs:Class .
+:Food rdf:type rdfs:Class .
+:HealthProblem rdf:type rdfs:Class .
+
+:eats rdf:type rdf:Property;
+      rdfs:domain :Person;
+      rdfs:range :Food .
+
+:experience rdf:type rdf:Property;
+            rdfs:domain :Person;
+            rdfs:range :HealthProblem .
+
+:ivantom rdf:type :Person . 
+:Koki rdf:type :Food .
+:FoodAllergy rdf:type :HealthProblem .
+```

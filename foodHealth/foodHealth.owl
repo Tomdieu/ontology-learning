@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#eats -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#eats">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#Food"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#experience -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#experience">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#HealthProblem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#foodName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#foodName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#healthProblem -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#healthProblem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#HealthProblem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#personName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#personName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#HealthProblem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#HealthProblem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#Ivantom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#Ivantom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#Person"/>
+        <eats rdf:resource="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#Koki"/>
+        <experience rdf:resource="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#foodAllergy1"/>
+        <personName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ivantom</personName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#Koki -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#Koki">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#Food"/>
+        <foodName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Koki</foodName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#foodAllergy1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#foodAllergy1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivantom/ontologies/2024/6/untitled-ontology-3#HealthProblem"/>
+        <healthProblem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FoodAllergy1</healthProblem>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
