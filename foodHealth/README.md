@@ -65,18 +65,7 @@ fh:ivantom fh:experiences fh:FoodAllergy .
 * Incorporate more specific food and health problem classes for detailed analysis.
 * Integrate external knowledge sources (e.g., medical databases) to enhance the ontology with established causal relationships. 
 
-## Contact
+<!-- ## Contact -->
 
-[Your Name/Organization]
-[Contact Information] 
-
-
-**Key Improvements:**
-
-* **Clarity:** Improved structure and language for better readability.
-* **Disclaimer:**  Added a note about correlation vs. causation.
-* **Namespace:**  Included a placeholder for your ontology's namespace.
-* **Domains and Ranges:** Specified domains and ranges for properties.
-* **Example:**  Provided a more complete Turtle example with namespace prefixes.
-* **Future Work:**  Suggested potential extensions.
-* **Contact:** Added a section for contact information. 
+<!-- [Your Name/Organization]
+[Contact Information]  -->

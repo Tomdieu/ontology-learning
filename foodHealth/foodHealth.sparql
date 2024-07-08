@@ -1,0 +1,26 @@
+- Sparql to select all food and food allergies associated
+
+PREFIX : <http://example.org/>
+
+SELECT ?food ?healthProblem
+WHERE {
+  ?person :eats ?food .
+  OPTIONAL { ?person :hasAllergy ?healthProblem . }
+  FILTER (BOUND(?healthProblem) && ?healthProblem rdf:type :HealthProblem)
+}
+
+- sparql query to list all foods,the health problem associated order 
+by the food name in descending order and limit the results to the fist 
+10 starting the list at position 10
+
+PREFIX : <http://example.org/>
+
+SELECT ?food ?healthProblem
+WHERE {
+  ?person :eats ?food .
+  OPTIONAL { ?person :hasAllergy ?healthProblem . }
+  FILTER (BOUND(?healthProblem))
+}
+ORDER BY DESC(?food)
+LIMIT 10
+OFFSET 9
